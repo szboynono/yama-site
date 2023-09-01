@@ -49,7 +49,7 @@ function page() {
             Success case study
           </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            IT Solutions & Services for Banking Financial Services and Insurance
+            Data Analytics and Business Intelligence for Banking Financial Services and Insurance
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
             The banking, financial services, and insurance industry (BFSI) are
