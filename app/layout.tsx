@@ -8,7 +8,7 @@ import clsx from "clsx";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "JINRONGGONGSI",
+  title: "SNOWMOUNTAIN",
   description: "Data analytics company",
 };
 

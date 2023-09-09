@@ -7,6 +7,7 @@ import {
   ArrowTrendingUpIcon,
 } from "@heroicons/react/24/outline";
 import Image from "next/image";
+import clsx from "clsx";
 
 const features = [
   {
@@ -22,6 +23,7 @@ const features = [
       "Personalized services Eg. Location-based services",
       "Customer Relationship Management",
     ],
+    imgs: ["/cg1.png", "/cg2.png"],
   },
   {
     name: "Performance Analytics",
@@ -35,6 +37,7 @@ const features = [
       "Expense Management",
       "Payment Analytics",
     ],
+    imgs: ["/cg3.png", "/cg4.png"],
   },
   {
     name: "Portfolio And Risk Management",
@@ -49,6 +52,7 @@ const features = [
       "Credit Risk and Exposure Analysis",
       "Incident Management & Claims Analysis",
     ],
+    imgs: ["/cg5.png", "/cg6.png"],
   },
   {
     name: "Regulatory Compliance",
@@ -61,6 +65,7 @@ const features = [
       "BASEL III compliance",
       "Data extraction with Rest API for reporting and auditing",
     ],
+    imgs: ["/cg7.png", "/cg8.png"],
   },
 ];
 
@@ -70,26 +75,14 @@ function page() {
       <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
-            <h2 className="text-base font-semibold leading-7 text-blue-500">
-              Success case study
-            </h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Data Analytics and Business Intelligence for Banking Financial
               Services and Insurance
             </p>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              The banking, financial services, and insurance industry (BFSI) are
-              currently undergoing transformative changes due to various
-              challenges posed by the economic uncertainty, tight regulations,
-              and the changing investor demographics and expectations. In this
-              journey of transformation, developing capabilities with data and
-              analytics to optimize operations to stay profitable, relevant, and
-              sustainable throughout the entire value chain.
-            </p>
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-              {features.map((feature) => (
+            {features.map((feature, index) => (
+              <div className={clsx('flex', index % 2 !== 0 && 'flex-row-reverse', 'justify-between', 'mb-[10%]', 'gap-10')} key={feature.name}>
                 <div key={feature.name} className="relative pl-16">
                   <dt className="text-base font-semibold leading-7 text-gray-900">
                     <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-500">
@@ -112,19 +105,22 @@ function page() {
                     </dd>
                   ))}
                 </div>
-              ))}
-            </dl>
+                <div>
+                  {feature.imgs?.map((img) => (
+                    <Image
+                      key={img}
+                      src={img}
+                      alt=""
+                      height={1000}
+                      width={2000}
+                    ></Image>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
-      <Image src="/cg1.png" alt="" height={1000} width={2000}></Image>
-      <Image src="/cg2.png" alt="" height={1000} width={2000}></Image>
-      <Image src="/cg3.png" alt="" height={1000} width={2000}></Image>
-      <Image src="/cg4.png" alt="" height={1000} width={2000}></Image>
-      <Image src="/cg5.png" alt="" height={1000} width={2000}></Image>
-      <Image src="/cg6.png" alt="" height={1000} width={2000}></Image>
-      <Image src="/cg7.png" alt="" height={1000} width={2000}></Image>
-      <Image src="/cg8.png" alt="" height={1000} width={2000}></Image>
     </>
   );
 }

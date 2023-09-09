@@ -10,28 +10,28 @@ const features = [
   {
     name: "Credit Risk Modeling",
     description:
-      "Based on Basel 3 and OSFI requirements, focused on adjudication/behavior）models and IFRS-9 provisioning models",
+      "Based on Basel 3 and OSFI requirements, focused on adjudication/behavior models and IFRS-9 provisioning models",
     href: "#",
     icon: TableCellsIcon,
   },
   {
     name: "Credit Risk Analytics and Reporting",
     description:
-      "Maintaining a healthy and sustainable lending business while managing potential credit losses",
+      "Maintain a healthy and sustainable lending business while managing potential credit losses",
     href: "#",
     icon: LockClosedIcon,
   },
   {
     name: "Insurance",
     description:
-      "Extract insights, patterns, and knowledge from vast amounts of data generated within the insurance industry and enable insurance companies to make data-driven decisions.",
+      "Extract insights, patterns, and knowledge from vast amounts of data generated within the insurance industry and enable insurance companies to make data-driven decisions",
     href: "#",
     icon: ChartBarIcon,
   },
   {
     name: "Wealth Management",
     description:
-      "Utilize data analytics to better understand clients, optimize investment strategies, enhance customer experiences, and improve overall business operations.",
+      "Utilize data analytics to better understand clients, optimize investment strategies, enhance customer experiences, and improve overall business operations",
     href: "#",
     icon: CurrencyDollarIcon,
   },
