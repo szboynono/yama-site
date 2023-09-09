@@ -8,8 +8,8 @@ import clsx from "clsx";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "SNOWMOUNTAIN",
-  description: "Data analytics company",
+  title: "Snowmountain Financial Group",
+  description: "Snowmountain Financial Group",
 };
 
 export default function RootLayout({
@@ -19,6 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+      <link rel="icon" href="/logo.png" sizes="any" />
+      </head>
       <body className={clsx('container mx-auto')}>
         <Header />
         {children}
