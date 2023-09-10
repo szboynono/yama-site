@@ -87,9 +87,8 @@ function MobileNavigation() {
             className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5"
           >
             <MobileNavLink href="/">Home</MobileNavLink>
-            <MobileNavLink href="/about">About us</MobileNavLink>
-            {/* <MobileNavLink href="/about">Services</MobileNavLink> */}
-            <MobileNavLink href="/stories">Success stories</MobileNavLink>
+            <MobileNavLink href="/about">About Us</MobileNavLink>
+            <MobileNavLink href="/comp-stories">Successful Stories</MobileNavLink>
           </Popover.Panel>
         </Transition.Child>
       </Transition.Root>
