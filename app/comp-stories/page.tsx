@@ -80,9 +80,9 @@ function page() {
               Services and Insurance
             </p>
           </div>
-          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+          <div className="mx-auto mt-16 max-w-4xl sm:mt-20 lg:mt-24 lg:max-w-6xl">
             {features.map((feature, index) => (
-              <div className={clsx('flex', index % 2 !== 0 && 'flex-row-reverse', 'justify-between', 'mb-[10%]', 'gap-10')} key={feature.name}>
+              <div className={clsx('flex', index % 2 !== 0 && 'md:flex-row-reverse', 'justify-between', 'mb-[10%]', 'gap-10', 'items-center')} key={feature.name}>
                 <div key={feature.name} className="relative pl-16">
                   <dt className="text-base font-semibold leading-7 text-gray-900">
                     <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-500">
@@ -108,7 +108,7 @@ function page() {
                 <div>
                   {feature.imgs?.map((img) => (
                     <Image
-                      className={clsx(feature.imgs.length === 1 && 'h-[100%]')}
+                      className={clsx(feature.imgs.length === 1 ? 'h-[120%]' : 'h-[50%]', 'hidden', 'sm:block')}
                       key={img}
                       src={img}
                       alt=""
