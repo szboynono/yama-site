@@ -37,7 +37,7 @@ const features = [
       "Expense Management",
       "Payment Analytics",
     ],
-    imgs: ["/cg3.png", "/cg4.png"],
+    imgs: ["/cg4.png", "/cg5.png"],
   },
   {
     name: "Portfolio And Risk Management",
@@ -52,7 +52,7 @@ const features = [
       "Credit Risk and Exposure Analysis",
       "Incident Management & Claims Analysis",
     ],
-    imgs: ["/cg5.png", "/cg6.png"],
+    imgs: ["/cg7.png"],
   },
   {
     name: "Regulatory Compliance",
@@ -65,7 +65,7 @@ const features = [
       "BASEL III compliance",
       "Data extraction with Rest API for reporting and auditing",
     ],
-    imgs: ["/cg7.png", "/cg8.png"],
+    imgs: ["/cg9.png"],
   },
 ];
 
@@ -108,6 +108,7 @@ function page() {
                 <div>
                   {feature.imgs?.map((img) => (
                     <Image
+                      className={clsx(feature.imgs.length === 1 && 'h-[100%]')}
                       key={img}
                       src={img}
                       alt=""
