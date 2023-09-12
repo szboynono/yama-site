@@ -202,7 +202,7 @@ function page() {
                   <dd>
                     <a
                       className="hover:text-gray-900"
-                      href="mailto:postmaster@snowmountainfinancialgroup.com"
+                      href="mailto:info@snowmountainfinancialgroup.com"
                     >
                       info@snowmountainfinancialgroup.com
                     </a>
