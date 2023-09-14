@@ -9,7 +9,13 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Snowmountain Financial Group",
-  description: "Snowmountain Financial Group",
+  description: "Snowmountain Financial Group: Pioneering data analysis and business intelligence for financial institutions. Harness the power of your data to drive decisions and boost profitability.",
+  robots: "index, follow",
+  viewport: "width=device-width, initial-scale=1",
+  openGraph: {
+    title: "Snowmountain Financial Group",
+    description: "Snowmountain Financial Group: Pioneering data analysis and business intelligence for financial institutions. Harness the power of your data to drive decisions and boost profitability."
+  }
 };
 
 export default function RootLayout({
