@@ -15,7 +15,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Snowmountain Financial Group",
     description: "Snowmountain Financial Group: Pioneering data analysis and business intelligence for financial institutions. Harness the power of your data to drive decisions and boost profitability."
-  }
+  },
+  keywords: ['financial services', 'wealth management', 'financial planning', 'stock', 'money management', 'money', 'Data Analysis', 'Data Visualization', 'Statistics']
 };
 
 export default function RootLayout({
