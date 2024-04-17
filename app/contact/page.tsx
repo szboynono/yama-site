@@ -154,11 +154,7 @@ function page() {
               <h2 className="text-3xl font-bold tracking-tight text-gray-900">
                 Get in touch
               </h2>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
-                Proin volutpat consequat porttitor cras nullam gravida at. Orci
-                molestie a eu arcu. Sed ut tincidunt integer elementum id sem.
-                Arcu sed malesuada et magna.
-              </p>
+              
               <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">
                 <div className="flex gap-x-4">
                   <dt className="flex-none">
@@ -169,9 +165,9 @@ function page() {
                     />
                   </dt>
                   <dd>
-                    545 Mavis Island
+                    Suite 1110, 33 Yonge Street
                     <br />
-                    Chicago, IL 99191
+                    Toronto Ontario
                   </dd>
                 </div>
                 <div className="flex gap-x-4">
@@ -185,9 +181,9 @@ function page() {
                   <dd>
                     <a
                       className="hover:text-gray-900"
-                      href="tel:+1 (555) 234-5678"
+                      href="tel:+1 (647) 897-2912"
                     >
-                      +1 (555) 234-5678
+                      +1 (647) 897-2912
                     </a>
                   </dd>
                 </div>
